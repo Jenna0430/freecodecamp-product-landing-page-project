@@ -10,15 +10,50 @@
   --body-text: 'Tahoma', sans-serif;
   --primary-color: rgb(232, 185, 14);
 }
+/* header styles */
 .h-t-b{
-  background: linear-gradient(
-    45deg,
+  /* background: linear-gradient(
+    65deg,
     var(--button-color) 0%,
     var(--button-color) 75%,
     var(--dark-green) 75%,
     var(--dark-green) 100%
-  );
+  ); */
+  background-color: var(--button-color);
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  height: 40%;
 }
+.header-text p{
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  left: -20px;
+  text-align: center;
+
+}
+.header-text span{
+  color: var(--primary-color);
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.button{
+  position: relative;
+  top: 90px;
+  left: 20px;
+  padding: 7px;
+  border: 2px solid var(--dark-green);
+  border-radius: 20px;
+  color: var(--dark-green);
+}
+.button:hover{
+  color: var(--primary-color);
+  background-color: var(--dark-green);
+}
+
   nav{
   position: fixed;
     top: 0;
@@ -51,5 +86,6 @@
   #logo{
     color: var(--primary-color);
   }
+
 
 
