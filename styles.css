@@ -123,8 +123,26 @@ h1, h2, h3, h4, h5, h6{
      align-items: center;
     }
 
-
-
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 15px;
+  gap: 0;
+}
+.container h3, .container img, .container p{
+  margin: 0;
+  padding: 0;
+}
+.container p{
+  font-size: 20px;
+}
+.container img{
+  height: 225px;
+  object-fit: cover;
+}
 
 /* responsive styles */
 @media screen and (min-width: 340px){
@@ -189,6 +207,14 @@ h1, h2, h3, h4, h5, h6{
       display: contents;
       
     } 
+    .about-us-text p{
+      font-size: medium;
+    }
+    .cart-holder{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 }
 
 
@@ -246,6 +272,7 @@ h1, h2, h3, h4, h5, h6{
         font-size: large;
         margin-top: 10px;
       }
+   
         
       }
 
