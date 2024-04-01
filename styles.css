@@ -55,7 +55,7 @@
 }
 
   nav{
-  position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     min-height: 75px;
@@ -63,7 +63,7 @@
     background-color: var(--background-color);
     text-align: center;
     padding: 15px;
-    
+    z-index: 4;
   }
   nav li a{
     text-decoration: none;
@@ -89,6 +89,19 @@
   #logo{
     color: var(--primary-color);
   }
+
+  /*main section*/
+  main{
+    position: absolute;
+    top: 420px;
+  }
+  .about-us{
+    margin: 15px;
+    text-align: justify;
+  }
+
+
+
 /* responsive styles */
 @media screen and (min-width: 340px){
   .header-text p{
