@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 :root{
   --button-color: #1a2019;
@@ -103,6 +104,7 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     top: 420px;
     text-align: justify;
+   
   }
   .about-us{
     margin: 15px;
@@ -143,7 +145,42 @@ h1, h2, h3, h4, h5, h6{
   height: 225px;
   object-fit: cover;
 }
+/* footer styles */
+footer{
+  position: absolute;
+  top: 1900px;
+  background-color: var(--button-color);
+  height: auto;
+  width: 100%;
+  color: white;
+  padding: 30px;
+}
 
+#email{
+  width: 290px;
+}
+input{
+  display: block;
+  padding: 3px;
+  margin: 7px;
+}
+.contact-us-links{
+  padding: 7px;
+  
+}
+.contact-us-links li{
+  list-style-type: none;
+  display: inline;
+}
+.contact-us-links li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px;
+ 
+}
+.contact-us-links li a:hover{
+  text-decoration: underline;
+}
 /* responsive styles */
 @media screen and (min-width: 340px){
   .header-text h1{
@@ -182,6 +219,16 @@ h1, h2, h3, h4, h5, h6{
  main{
   top: 320px;
  }
+ .contact-us{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  flex-direction: column;
+  align-items: flex-end;
+ }
+footer{
+  top: 1600px;
+}
 }
 @media screen and (min-width: 660px){
     .h-t-b{
@@ -214,6 +261,9 @@ h1, h2, h3, h4, h5, h6{
       display: flex;
       flex-direction: row;
       justify-content: center;
+    }
+    footer{
+      top: 1000px;
     }
 }
 
@@ -272,7 +322,14 @@ h1, h2, h3, h4, h5, h6{
         font-size: large;
         margin-top: 10px;
       }
-   
+   .container img{
+    position: relative;
+    top: -2%;
+    width: 100%;
+   }
+   footer{
+    top: 1400px;
+  }
         
       }
 
